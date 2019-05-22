@@ -1,5 +1,5 @@
-#include <algorithm>
-#include <math.h>
+#include<algorithm>
+
 using namespace std;
 
 template <typename T>
@@ -15,8 +15,8 @@ RppStatus host_contrast(T* srcPtr, RppiSize srcSize, T* dstPtr,
         {
             Rpp32f pixel = (Rpp32f) srcPtr[i + (c * srcSize.width * srcSize.height)];
             pixel = ((pixel - Min) * ((new_max - new_min) / (Max - Min))) + new_min;
-            pixel = std::min(pixel, (Rpp32f)new_max);
-            pixel = std::max(pixel, (Rpp32f)new_min);
+            pixel = (pixel < (Rpp32f)new_max) ? pixel : ((Rpp32f)new_max);
+            pixel = (pixel > (Rpp32f)new_min) ? pixel : ((Rpp32f)new_min);
             dstPtr[i + (c * srcSize.width * srcSize.height)] = (Rpp8u) pixel;
         }
     }

@@ -1,9 +1,7 @@
-#include <algorithm>
 #include <math.h>
 
 template <typename T>
-RppStatus 
-host_rgb2hsv_pln(T *srcPtr, RppiSize srcSize, T *dstPtr)
+RppStatus host_rgb2hsv_pln(T *srcPtr, RppiSize srcSize, T *dstPtr)
 {
     for (int i = 0; i < (srcSize.width * srcSize.height); i++)
     {
@@ -11,8 +9,8 @@ host_rgb2hsv_pln(T *srcPtr, RppiSize srcSize, T *dstPtr)
         rf = ((float) srcPtr[i]) / 255;
         gf = ((float) srcPtr[i + (srcSize.width * srcSize.height)]) / 255;
         bf = ((float) srcPtr[i + (2 * srcSize.width * srcSize.height)]) / 255;
-        cmax = std::max(std::max(rf, gf), bf);
-        cmin = std::min(std::min(rf, gf), bf);
+        cmax = ((rf > gf) && (rf > bf)) ? rf : ((gf > bf) ? gf : bf);
+        cmin = ((rf < gf) && (rf < bf)) ? rf : ((gf < bf) ? gf : bf);
         delta = cmax - cmin;
 
         if (delta == 0)
@@ -58,8 +56,7 @@ host_rgb2hsv_pln(T *srcPtr, RppiSize srcSize, T *dstPtr)
 }
 
 template <typename T>
-RppStatus 
-host_rgb2hsv_pkd(T *srcPtr, RppiSize srcSize, T *dstPtr)
+RppStatus host_rgb2hsv_pkd(T *srcPtr, RppiSize srcSize, T *dstPtr)
 {
     for (int i = 0; i < (3 * srcSize.width * srcSize.height); i += 3)
     {
@@ -67,8 +64,8 @@ host_rgb2hsv_pkd(T *srcPtr, RppiSize srcSize, T *dstPtr)
         rf = ((float) srcPtr[i]) / 255;
         gf = ((float) srcPtr[i + 1]) / 255;
         bf = ((float) srcPtr[i + 2]) / 255;
-        cmax = std::max(std::max(rf, gf), bf);
-        cmin = std::min(std::min(rf, gf), bf);
+        cmax = ((rf > gf) && (rf > bf)) ? rf : ((gf > bf) ? gf : bf);
+        cmin = ((rf < gf) && (rf < bf)) ? rf : ((gf < bf) ? gf : bf);
         delta = cmax - cmin;
 
         if (delta == 0)

@@ -12,8 +12,8 @@ RppStatus host_hueRGB_pln(T *srcPtr, RppiSize srcSize, T *dstPtr, Rpp32f hueShif
         rf = ((float) srcPtr[i]) / 255;
         gf = ((float) srcPtr[i + (srcSize.width * srcSize.height)]) / 255;
         bf = ((float) srcPtr[i + (2 * srcSize.width * srcSize.height)]) / 255;
-        cmax = std::max(std::max(rf, gf), bf);
-        cmin = std::min(std::min(rf, gf), bf);
+        cmax = ((rf > gf) && (rf > bf)) ? rf : ((gf > bf) ? gf : bf);
+        cmin = ((rf < gf) && (rf < bf)) ? rf : ((gf < bf) ? gf : bf);
         delta = cmax - cmin;
 
         if (delta == 0)
@@ -131,8 +131,8 @@ RppStatus host_hueRGB_pkd(T *srcPtr, RppiSize srcSize, T *dstPtr, Rpp32f hueShif
         rf = ((float) srcPtr[i]) / 255;
         gf = ((float) srcPtr[i + 1]) / 255;
         bf = ((float) srcPtr[i + 2]) / 255;
-        cmax = std::max(std::max(rf, gf), bf);
-        cmin = std::min(std::min(rf, gf), bf);
+        cmax = ((rf > gf) && (rf > bf)) ? rf : ((gf > bf) ? gf : bf);
+        cmin = ((rf < gf) && (rf < bf)) ? rf : ((gf < bf) ? gf : bf);
         delta = cmax - cmin;
 
         if (delta == 0)

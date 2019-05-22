@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <math.h>
 
 template <typename T>
@@ -12,8 +11,8 @@ RppStatus host_saturationRGB_pln(T *srcPtr, RppiSize srcSize, T *dstPtr, Rpp32f 
         rf = ((float) srcPtr[i]) / 255;
         gf = ((float) srcPtr[i + (srcSize.width * srcSize.height)]) / 255;
         bf = ((float) srcPtr[i + (2 * srcSize.width * srcSize.height)]) / 255;
-        cmax = std::max(std::max(rf, gf), bf);
-        cmin = std::min(std::min(rf, gf), bf);
+        cmax = ((rf > gf) && (rf > bf)) ? rf : ((gf > bf) ? gf : bf);
+        cmin = ((rf < gf) && (rf < bf)) ? rf : ((gf < bf) ? gf : bf);
         delta = cmax - cmin;
 
         if (delta == 0)
@@ -58,8 +57,10 @@ RppStatus host_saturationRGB_pln(T *srcPtr, RppiSize srcSize, T *dstPtr, Rpp32f 
     for (int i = 0; i < (srcSize.width * srcSize.height); i++)
     {
         pHSV[i + (srcSize.width * srcSize.height)] *= saturationFactor;
-        pHSV[i + (srcSize.width * srcSize.height)] = std::min(pHSV[i + (srcSize.width * srcSize.height)], (float) 1);
-        pHSV[i + (srcSize.width * srcSize.height)] = std::max(pHSV[i + (srcSize.width * srcSize.height)], (float) 0);
+        //pHSV[i + (srcSize.width * srcSize.height)] = std::min(pHSV[i + (srcSize.width * srcSize.height)], (float) 1);
+        //pHSV[i + (srcSize.width * srcSize.height)] = std::max(pHSV[i + (srcSize.width * srcSize.height)], (float) 0);
+        pHSV[i + (srcSize.width * srcSize.height)] = (pHSV[i + (srcSize.width * srcSize.height)] < (float) 1) ? pHSV[i + (srcSize.width * srcSize.height)] : ((float) 1);
+        pHSV[i + (srcSize.width * srcSize.height)] = (pHSV[i + (srcSize.width * srcSize.height)] > (float) 0) ? pHSV[i + (srcSize.width * srcSize.height)] : ((float) 0);
     }
 
     for (int i = 0; i < (srcSize.width * srcSize.height); i++)
@@ -125,8 +126,8 @@ RppStatus host_saturationRGB_pkd(T *srcPtr, RppiSize srcSize, T *dstPtr, Rpp32f 
         rf = ((float) srcPtr[i]) / 255;
         gf = ((float) srcPtr[i + 1]) / 255;
         bf = ((float) srcPtr[i + 2]) / 255;
-        cmax = std::max(std::max(rf, gf), bf);
-        cmin = std::min(std::min(rf, gf), bf);
+        cmax = ((rf > gf) && (rf > bf)) ? rf : ((gf > bf) ? gf : bf);
+        cmin = ((rf < gf) && (rf < bf)) ? rf : ((gf < bf) ? gf : bf);
         delta = cmax - cmin;
 
         if (delta == 0)
@@ -171,8 +172,8 @@ RppStatus host_saturationRGB_pkd(T *srcPtr, RppiSize srcSize, T *dstPtr, Rpp32f 
     for (int i = 0; i < (3 * srcSize.width * srcSize.height); i += 3)
     {
         pHSV[i + 1] *= saturationFactor;
-        pHSV[i + 1] = std::min(pHSV[i + 1], (float) 1);
-        pHSV[i + 1] = std::max(pHSV[i + 1], (float) 0);
+        pHSV[i + 1] = (pHSV[i + 1] < (float) 1) ? pHSV[i + 1] : ((float) 1);
+        pHSV[i + 1] = (pHSV[i + 1] > (float) 0) ? pHSV[i + 1] : ((float) 0);
     }
 
     for (int i = 0; i < (3 * srcSize.width * srcSize.height); i += 3)
@@ -240,8 +241,9 @@ RppStatus host_saturationHSV_pln(T *srcPtr, RppiSize srcSize, T *dstPtr, Rpp32f 
     for (int i = 0; i < (srcSize.width * srcSize.height); i++)
     {
         dstPtr[i + (srcSize.width * srcSize.height)] *= saturationFactor;
-        dstPtr[i + (srcSize.width * srcSize.height)] = std::min(dstPtr[i + (srcSize.width * srcSize.height)], (float) 1);
-        dstPtr[i + (srcSize.width * srcSize.height)] = std::max(dstPtr[i + (srcSize.width * srcSize.height)], (float) 0);
+        dstPtr[i + (srcSize.width * srcSize.height)] = (dstPtr[i + (srcSize.width * srcSize.height)] < (float) 1) ? dstPtr[i + (srcSize.width * srcSize.height)] : ((float) 1);
+        dstPtr[i + (srcSize.width * srcSize.height)] = (dstPtr[i + (srcSize.width * srcSize.height)] > (float) 0) ? dstPtr[i + (srcSize.width * srcSize.height)] : ((float) 0);
+    
     }
 
     return RPP_SUCCESS;
@@ -260,8 +262,8 @@ RppStatus host_saturationHSV_pkd(T *srcPtr, RppiSize srcSize, T *dstPtr, Rpp32f 
     for (int i = 0; i < (3 * srcSize.width * srcSize.height); i += 3)
     {
         dstPtr[i + 1] *= saturationFactor;
-        dstPtr[i + 1] = std::min(dstPtr[i + 1], (float) 1);
-        dstPtr[i + 1] = std::max(dstPtr[i + 1], (float) 0);
+        dstPtr[i + 1] = (dstPtr[i + 1] < (float) 1) ? dstPtr[i + 1] : ((float) 1);
+        dstPtr[i + 1] = (dstPtr[i + 1] > (float) 0) ? dstPtr[i + 1] : ((float) 0);
     }
 
     return RPP_SUCCESS;

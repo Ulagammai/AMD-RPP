@@ -1,7 +1,3 @@
-#include <algorithm>
-#include <math.h>
-using namespace std;
-
 template <typename T>
 RppStatus host_flip_pln(T* srcPtr, RppiSize srcSize, T* dstPtr, 
                         RppiAxis flipAxis, unsigned channel)

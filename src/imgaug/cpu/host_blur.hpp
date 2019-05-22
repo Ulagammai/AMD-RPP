@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <math.h>
 
 
@@ -68,8 +67,8 @@ RppStatus host_blur_pln(T* srcPtr, RppiSize srcSize, T* dstPtr, unsigned int cha
                 {
                     pixel += (kernel_3x3[k] * (float)pSrcMod[convLocs[k]]);
                 }
-                pixel = std::min(pixel, (Rpp32f) 255);
-                pixel = std::max(pixel, (Rpp32f) 0);
+                pixel = (pixel < (Rpp32f) 255) ? pixel : ((Rpp32f) 255);
+                pixel = (pixel > (Rpp32f) 0) ? pixel : ((Rpp32f) 0);
                 dstPtr[dstLoc] = (Rpp8u) round(pixel);
                 dstLoc += 1;
                 srcModLoc += 1;
@@ -151,8 +150,8 @@ RppStatus host_blur_pkd(T* srcPtr, RppiSize srcSize, T* dstPtr, unsigned int cha
                 {
                     pixel += (kernel_3x3[k] * (float)pSrcMod[convLocs[k]]);
                 }
-                pixel = std::min(pixel, (Rpp32f) 255);
-                pixel = std::max(pixel, (Rpp32f) 0);
+                pixel = (pixel < (Rpp32f) 255) ? pixel : ((Rpp32f) 255);
+                pixel = (pixel > (Rpp32f) 0) ? pixel : ((Rpp32f) 0);
                 dstPtr[dstLoc] = (Rpp8u) round(pixel);
                 dstLoc += 3;
                 srcModLoc += 3;
