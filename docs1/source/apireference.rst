@@ -5,6 +5,6 @@ API Reference
     :maxdepth: 2
     :caption: Contents:
     
-    Imageaugumentationfunctions
-    Vision Functions
+      Imageaugumentationfunctions
+      Vision Functions
     
