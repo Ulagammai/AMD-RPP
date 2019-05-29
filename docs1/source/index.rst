@@ -6,9 +6,7 @@
 Welcome to AMD-RPP's documentation!
 ===================================
 
-Sources and binaries can be found at `RPP's GitHub's site 
-
-<https://github.com/LokeshBonta/AMD-RPP>`_.
+Sources and binaries can be found at `RPP's GitHub's site <https://github.com/LokeshBonta/AMD-RPP>`_.
 
 .. toctree::
    :maxdepth: 2
