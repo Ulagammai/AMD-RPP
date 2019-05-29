@@ -13,6 +13,7 @@ Sources and binaries can be found at `RPP's GitHub's site <https://github.com/Lo
    :caption: Contents:
     
    install
+   apireference
 
 
 
