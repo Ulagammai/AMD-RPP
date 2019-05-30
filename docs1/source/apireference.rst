@@ -1,10 +1,9 @@
 API Reference
 **************
 
-.. toctree::
+ .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   
    
    imageaugumentationfunctions
    visionfunctions
