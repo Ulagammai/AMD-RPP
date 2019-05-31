@@ -73,13 +73,13 @@ The library can be built, from the `build` directory using the 'make' configurat
 
  MIVisionX(OpenVX) Support
 
-Extended RPP support as a functionality through OpenVX `[MIVisionX]<https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX>`_.
+Extended RPP support as a functionality through OpenVX `[MIVisionX]<https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX>`_
 
  To build OpenVX with 'RPP extension'
 
 RPP should be installed, follow Instructions to build the library
 
-`git  clone <https://github.com/mythreyi22/MIVisionX.git>`_
+git  clone `<https://github.com/mythreyi22/MIVisionX.git>`_
   
   cd MIVisionX
   
