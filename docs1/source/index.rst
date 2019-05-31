@@ -11,6 +11,7 @@ Welcome to AMD-RPP's documentation!
    :caption: Contents:
     
    install
+   apireference
 
 
 
