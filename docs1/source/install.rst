@@ -8,7 +8,7 @@ MIOpen supports two programming models
 
    1. OpenCL 
    
-   2.`[HIP]<https://github.com/ROCm-Developer-Tools/HIP>`_.
+   2.`HIP<https://github.com/ROCm-Developer-Tools/HIP>`_
 
  Prerequisites
  -------------
@@ -19,7 +19,7 @@ MIOpen supports two programming models
    
    3. Ubuntu 16.04/18.04
    
-   4  `[ROCm supported hardware]<https://rocm.github.io/hardware.html>`_.
+   4  `[ROCm supported hardware]<https://rocm.github.io/hardware.html>`_
    
    5. `[ROCm]<https://rocm.github.io/install.html>`_.
 
@@ -45,7 +45,7 @@ MIOpen supports two programming models
  
  **Using CMake on Linux**
  
-git clone `<https://github.com/LokeshBonta/AMD-RPP.git>`_.
+git clone `<https://github.com/LokeshBonta/AMD-RPP.git>`_
  
  cd AMD-RPP
 
@@ -79,7 +79,7 @@ Extended RPP support as a functionality through OpenVX `[MIVisionX]<https://gith
 
 RPP should be installed, follow Instructions to build the library
 
-`git  clone <https://github.com/mythreyi22/MIVisionX.git>`_.
+`git  clone <https://github.com/mythreyi22/MIVisionX.git>`_
   
   cd MIVisionX
   
