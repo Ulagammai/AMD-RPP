@@ -39,7 +39,7 @@ MIOpen supports two programming models
  
      git clone `<https://github.com/LokeshBonta/AMD-RPP.git>`_
  
- cd AMD-RPP
+     cd AMD-RPP
 
  **Building RPP from source**
  
