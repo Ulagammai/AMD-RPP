@@ -1,16 +1,15 @@
 Installation
 ************
  
-  Build and Install Instructions
-  ==============================
+**Build and Install Instructions**
+  
 
 MIOpen supports two programming models
 
    1. OpenCL 
    2. HIP`<https://github.com/ROCm-Developer-Tools/HIP>`_
 
- Prerequisites
- -------------
+ **Prerequisites**
  
    1. OpenCL - OpenCL libraries and header files
    2. HIP    - HIP and HCC libraries and header files
@@ -18,8 +17,7 @@ MIOpen supports two programming models
    4. [ROCm supported hardware]`<https://rocm.github.io/hardware.html>`_
    5. [ROCm]`<https://rocm.github.io/install.html>`_.
 
- Functions Included
- ------------------
+ **Functions Included**
  
     - Brightness
     - Contrast
@@ -29,8 +27,7 @@ MIOpen supports two programming models
     - HSV2RGB
     - RGB2HSV
 
- Variations
- -----------
+ **Variations**
 
     - Support for 3C(RGB) and 1C(Grayscale) images
     - Planar and Packed
@@ -40,7 +37,7 @@ MIOpen supports two programming models
  
  **Using CMake on Linux**
  
-git clone `<https://github.com/LokeshBonta/AMD-RPP.git>`_
+     git clone `<https://github.com/LokeshBonta/AMD-RPP.git>`_
  
  cd AMD-RPP
 
@@ -68,13 +65,13 @@ The library can be built, from the `build` directory using the 'make' configurat
 
  MIVisionX(OpenVX) Support
 
-Extended RPP support as a functionality through OpenVX MIVisionX `<https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX>`_
+ Extended RPP support as a functionality through OpenVX MIVisionX `<https://github.com/GPUOpen-ProfessionalCompute-Libraries     /MIVisionX>`_
 
  To build OpenVX with 'RPP extension'
 
-RPP should be installed, follow Instructions to build the library
+ RPP should be installed, follow Instructions to build the library
 
-git  clone `<https://github.com/mythreyi22/MIVisionX.git>`_
+ git  clone `<https://github.com/mythreyi22/MIVisionX.git>`_
   
   cd MIVisionX
   
