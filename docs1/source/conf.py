@@ -68,7 +68,6 @@ language = None
 # directories to ignore when looking for source files.
 # These patterns also affect html_static_path and html_extra_path
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-<<<<<<< HEAD
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -98,8 +97,6 @@ pygments_style = 'sphinx'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 # keep_warnings = False
 
-=======
-
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
 #
@@ -128,7 +125,6 @@ pygments_style = 'sphinx'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 # keep_warnings = False
 
->>>>>>> 4df30873e72716c9d8c05236903469db2559cdc1
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
