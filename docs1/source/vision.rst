@@ -1,0 +1,5 @@
+VisionFunctions
+***************
+
+- brightness
+- blur
