@@ -2,20 +2,25 @@ Installation
 ************
  
   Build and Install Instructions
-  -------------------------------
+  ==============================
 
 MIOpen supports two programming models
 
    1. OpenCL 
+   
    2. `[HIP]<https://github.com/ROCm-Developer-Tools/HIP>`_
 
  Prerequisites
  -------------
  
    1. OpenCL - OpenCL libraries and header files
+   
    2. HIP    - HIP and HCC libraries and header files
+   
    3. Ubuntu 16.04/18.04
+   
    4  `[ROCm supported hardware]<https://rocm.github.io/hardware.html>`_
+   
    5. `[ROCm]<https://rocm.github.io/install.html>`_
 
  Functions Included
