@@ -7,7 +7,7 @@ Installation
 MIOpen supports two programming models
 
    1. OpenCL 
-   2.HIP`<https://github.com/ROCm-Developer-Tools/HIP>`_
+   2. HIP`<https://github.com/ROCm-Developer-Tools/HIP>`_
 
  Prerequisites
  -------------
@@ -68,7 +68,7 @@ The library can be built, from the `build` directory using the 'make' configurat
 
  MIVisionX(OpenVX) Support
 
-Extended RPP support as a functionality through OpenVX MIVisionX`<https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX>`_
+Extended RPP support as a functionality through OpenVX MIVisionX `<https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX>`_
 
  To build OpenVX with 'RPP extension'
 
