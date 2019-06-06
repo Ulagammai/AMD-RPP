@@ -45,17 +45,17 @@ MIOpen supports two programming models
  
  **Configuring with cmake**
  
-First create a build directory:
+ First create a build directory:
  
-mkdir build; cd build;
+ mkdir build; cd build;
  
-Next configure cmake. The preferred backend for RPP can be set using the `-DBACKEND` cmake variable.
+ Next configure cmake. The preferred backend for RPP can be set using the `-DBACKEND` cmake variable.
 
  For OpenCL, run:
  
  cmake -DBACKEND=OCL ..`
 
-The library can be built, from the `build` directory using the 'make' configuration:
+ The library can be built, from the `build` directory using the 'make' configuration:
 
  `make -j4`
 
