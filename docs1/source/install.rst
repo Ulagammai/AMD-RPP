@@ -19,8 +19,8 @@ MIOpen supports two programming models
    1. OpenCL - OpenCL libraries and header files
    2. HIP    - HIP and HCC libraries and header files
    3. Ubuntu 16.04/18.04
-   4. `ROCm supported hardware<https://rocm.github.io/hardware.html>`_
-   5. `ROCm<https://rocm.github.io/install.html>`_
+   4. `[ROCm] supported hardware<https://rocm.github.io/hardware.html>`_
+   5. `[ROCm]<https://rocm.github.io/install.html>`_
 
  Functions Included
  ------------------
@@ -74,7 +74,7 @@ MIOpen supports two programming models
  MIVisionX(OpenVX) Support
  --------------------------
 
- Extended RPP support as a functionality through OpenVX `MIVisionX<https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX>`_ 
+ Extended RPP support as a functionality through OpenVX `[MIVisionX]<https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX>`_ 
 
  To build OpenVX with 'RPP extension'
 
