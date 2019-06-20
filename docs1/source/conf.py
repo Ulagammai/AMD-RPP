@@ -96,7 +96,6 @@ pygments_style = 'sphinx'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 # keep_warnings = False
 
-
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
 #

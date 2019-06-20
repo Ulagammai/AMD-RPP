@@ -1,17 +1,21 @@
 Build and Install Instructions
 ******************************
- 
+
   
  MIOpen supports two programming models
 
-   
+**Build and Install Instructions**
+  
+
+MIOpen supports two programming models
+
+
    1. OpenCL 
    2. `[HIP](https://github.com/ROCm-Developer-Tools/HIP)`_
 
  Prerequisites
  -------------
  
-
    1. OpenCL - OpenCL libraries and header files
    2. HIP    - HIP and HCC libraries and header files
    3. Ubuntu 16.04/18.04
@@ -20,7 +24,7 @@ Build and Install Instructions
 
  Functions Included
  ------------------
- 
+
     - Brightness
     - Contrast
     - Flip(Horizontal, Vertical and Both)
@@ -42,26 +46,22 @@ Build and Install Instructions
  
 
  git clone `<https://github.com/LokeshBonta/AMD-RPP.git>`_
- 
+
  cd AMD-RPP
 
  **Building RPP from source**
  
-
  **Configuring with cmake**
  
-
  First create a build directory:
  
  mkdir build; cd build;
  
-
  Next configure cmake. The preferred backend for RPP can be set using the `-DBACKEND` cmake variable.
 
  For OpenCL, run:
  
-  
- `cmake -DBACKEND=OCL ..`
+ cmake -DBACKEND=OCL ..`
 
  The library can be built, from the `build` directory using the 'make' configuration:
 
@@ -74,19 +74,17 @@ Build and Install Instructions
  MIVisionX(OpenVX) Support
  --------------------------
 
-
  Extended RPP support as a functionality through OpenVX `[MIVisionX](https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX)`_ 
 
  To build OpenVX with 'RPP extension'
 
-
  RPP should be installed, follow Instructions to build the library
 
+ git  clone `<https://github.com/mythreyi22/MIVisionX.git>`_
 
- 'git  clone `<https://github.com/mythreyi22/MIVisionX.git>`_
+ cd MIVisionX
   
-  cd MIVisionX
-  git  checkout gdf_test
+ git  checkout gdf_test
 
  For GPU support:
  ----------------
