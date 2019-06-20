@@ -1,25 +1,25 @@
-Installation
-************
+Build and Install Instructions
+******************************
  
-  Build and Install Instructions
-
- 
-  MIOpen supports two programming models
+  
+ MIOpen supports two programming models
 
    
    1. OpenCL 
-   2. [HIP](https://github.com/ROCm-Developer-Tools/HIP)
+   2. `[HIP](https://github.com/ROCm-Developer-Tools/HIP)`_
 
  Prerequisites
+ -------------
  
 
    1. OpenCL - OpenCL libraries and header files
    2. HIP    - HIP and HCC libraries and header files
    3. Ubuntu 16.04/18.04
-   4. [ROCm supported hardware](https://rocm.github.io/hardware.html)
-   5. [ROCm](https://rocm.github.io/install.html)
+   4. `[ROCm supported hardware](https://rocm.github.io/hardware.html)`_
+   5. `[ROCm](https://rocm.github.io/install.html)`_
 
  Functions Included
+ ------------------
  
     - Brightness
     - Contrast
@@ -30,6 +30,7 @@ Installation
     - RGB2HSV
 
  Variations
+ ----------
 
     - Support for 3C(RGB) and 1C(Grayscale) images
     - Planar and Packed
@@ -40,7 +41,7 @@ Installation
  **Using CMake on Linux**
  
 
- git clone https://github.com/LokeshBonta/AMD-RPP.git
+ git clone `<https://github.com/LokeshBonta/AMD-RPP.git>`_
  
  cd AMD-RPP
 
@@ -71,9 +72,10 @@ Installation
  `sudo make install`
 
  MIVisionX(OpenVX) Support
+ --------------------------
 
 
- Extended RPP support as a functionality through OpenVX [MIVisionX](https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX) 
+ Extended RPP support as a functionality through OpenVX `[MIVisionX](https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX)`_ 
 
  To build OpenVX with 'RPP extension'
 
@@ -81,12 +83,13 @@ Installation
  RPP should be installed, follow Instructions to build the library
 
 
- 'git  clone https://github.com/mythreyi22/MIVisionX.git'
+ 'git  clone `<https://github.com/mythreyi22/MIVisionX.git>`_
   
   cd MIVisionX
   git  checkout gdf_test
 
  For GPU support:
+ ----------------
  
  `mkdir build;`
  `cd build;` 
@@ -96,6 +99,7 @@ Installation
             or
 
  For CPU support:
+ ----------------
  
 
  `cd build;` 
