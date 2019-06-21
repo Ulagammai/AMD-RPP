@@ -196,21 +196,18 @@ Box Filter
 
       This filter uses the following convolution matrix:
 		
-	def Matrix_func():
+def Matrix_func():
+    r"""
+    .. math::
+
+     Kbox =\begin{bmatrix}
+                1 & 1 & 1 \\
+      	        1 & 1 & 1 \\  * 1/9
+                1 & 1 & 1
+            \end{bmatrix}
     """
-    ::
 
-                    [1  4  7 ]
-.. centered:: M  =  [2  5  8 ] 
-                    [3  6  9 ]
-
-    More text...
-
-    """
-
-	
-		
-     rppi_box_filter_u8(RppPtr_t srcPtr, RppiSize srcSize, RppPtr_t dstPtr, RppHandle_t rppHandle)
+      rppi_box_filter_u8(RppPtr_t srcPtr, RppiSize srcSize, RppPtr_t dstPtr, RppHandle_t rppHandle)
 
 			- srcPtr- input image pointer; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
