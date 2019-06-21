@@ -77,8 +77,7 @@ RPPContrast
    - new_max- Maximum value for Contrast function(225)
    - RppHandle_t handle - It contains the Miscellanous function like command Queue.
 
-      .. centered:: mul(I-Min,New Max-New Min),truediv(New Max-New Min,Max  Min),add(truediv)
-      
+      .. centered:: truediv(New Max-New Min,Max  Min)      
 RPPBlur
 -------
 
