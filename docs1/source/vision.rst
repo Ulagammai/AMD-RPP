@@ -8,7 +8,7 @@ Absolute Difference
 
   Absolute Difference is computed by
   
-                                       .. centered:: out(x,y)=|in1(x,y)−in2(x,y)|
+                                     .. centered:: out(x,y)=|in1(x,y)−in2(x,y)|
 
 	rppi_absolute_difference_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 	
@@ -25,7 +25,7 @@ Accumulate
 
   Accumulation is computed by:
 
-	                                 .. centered:: accum(x,y)=accum(x,y)+input(x,y)
+	                             .. centered:: accum(x,y)=accum(x,y)+input(x,y)
 
 	
 	rppi_accumulate_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize,RppHandle_t rppHandle )
@@ -42,7 +42,7 @@ Accumulate Weighted
 
   Weighted accumulation is computed by:
 
-		                                .. centered:: accum(x,y)=(1−α)∗accum(x,y)+α∗input(x,y)
+		                        .. centered:: accum(x,y)=(1−α)∗accum(x,y)+α∗input(x,y)
 
 Where 0≤α≤1 Conceptually, the rounding for this is defined as:
 
@@ -64,7 +64,7 @@ Arithmetic Addition
 
    Arithmetic addition is performed between the pixel values in two U8 orS16 images. The output image can be U8 only if both source images are U8and the output image is explicitly set to U8. It is otherwise S16. If one of the input images is of type S16, all values are converted to S16. The overflow handling is controlled by an overflow-policy parameter. For each pixel value in the two input images:
 
-					               .. centered:: out(x,y)=in1(x,y)+in2(x,y)
+					    .. centered:: out(x,y)=in1(x,y)+in2(x,y)
 	
 	rppi_add_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
@@ -81,7 +81,7 @@ Arithmetic Subtraction
 
     Arithmetic subtraction is performed between the pixel values in two U8 or two S16 images. The output image can be U8 only if both source images are U8 and the output image is explicitly set to U8. It is otherwise S16. If one of the input images is of type S16, all values are converted to S16. The overflow handling is controlled by an overflow-policy parameter. For each pixel value in the two input images:
 
-					                   .. centered:: out(x,y)=in1(x,y)−in2(x,y)
+					         .. centered:: out(x,y)=in1(x,y)−in2(x,y)
 
 	rppi_subtract_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
@@ -113,10 +113,10 @@ Bitwise AND
  
    Bitwise AND is computed by the following, for each bit in each pixel in the input images:
 
-				           .. centered:: out(x,y)=in1(x,y)∧in2(x,y)
+				       .. centered:: out(x,y)=in1(x,y)∧in2(x,y)
 
    Or expressed as C code:
-				           .. centered:: out(x,y) = in_1(x,y) & in_2(x,y)
+				       .. centered:: out(x,y) = in_1(x,y) & in_2(x,y)
 
 	rppi_bitwise_AND_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
@@ -133,10 +133,10 @@ Bitwise EXCLUSIVE OR
 
     Bitwise XOR is computed by the following, for each bit in each pixel in the input images:
 
-				         .. centered:: out(x,y)=in1(x,y)⊕in2(x,y)
+				       .. centered:: out(x,y)=in1(x,y)⊕in2(x,y)
 
         Or expressed as C code:
-				         .. centered:: out(x,y) = in_1(x,y) ^ in_2(x,y)
+				       .. centered:: out(x,y) = in_1(x,y) ^ in_2(x,y)
 
 	rppi_exclusive_OR_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
@@ -153,10 +153,11 @@ Bitwise INCLUSIVE OR
 
     Bitwise INCLUSIVE OR is computed by the following, for each bit in each pixel in the input images:
 
-				       .. centered:: out(x,y)=in1(x,y)∨in2(x,y)
+				      .. centered:: out(x,y)=in1(x,y)∨in2(x,y)
 
-Or expressed as C code:
-				       .. centered:: out(x,y) = in_1(x,y) | in_2(x,y)
+          Or expressed as C code:
+				      
+				      .. centered::  out(x,y) = in_1(x,y) | in_2(x,y)
 
 	rppi_inclusive_OR_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
@@ -173,10 +174,11 @@ Bitwise NOT
  
     Bitwise NOT is computed by the following, for each bit in each pixel in the input image:
 
-				           .. centered:: out(x,y)=in(x,y)
+				         .. centered:: out(x,y)=in(x,y)
 
-Or expressed as C code
- 					   .. centered:: out(x,y) = ~in_1(x,y)
+         Or expressed as C code
+	          
+		                         .. centered:: out(x,y) = ~in_1(x,y)
 
 	rppi_bitwise_NOT_u8( RppPtr_t srcPtr1,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
@@ -193,9 +195,9 @@ Box Filter
       This filter uses the following convolution matrix:
 				    
 				     
-                                     Kbox =  |1 1 1|
-				             |1 1 1|* 1/9
-				             |1 1 1|
+                                   .. centered::  Kbox =  |1 1 1|
+				   .. centered::          |1 1 1|* 1/9
+				   .. centered::          |1 1 1|
 
           rppi_box_filter_u8(RppPtr_t srcPtr, RppiSize srcSize, RppPtr_t dstPtr, RppHandle_t rppHandle)
 
