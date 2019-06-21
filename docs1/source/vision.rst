@@ -195,9 +195,9 @@ Box Filter
       This filter uses the following convolution matrix:
 				    
 				     
-                                   .. centered::  Kbox =  |1 1 1|
-				   .. centered::          |1 1 1|* 1/9
-				   .. centered::          |1 1 1|
+                                   .. centered::          [1 1 1]
+				   .. centered:: Kbox =   [1 1 1]* 1/9
+				   .. centered::          [1 1 1]
 
           rppi_box_filter_u8(RppPtr_t srcPtr, RppiSize srcSize, RppPtr_t dstPtr, RppHandle_t rppHandle)
 
