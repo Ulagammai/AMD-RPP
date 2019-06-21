@@ -37,7 +37,6 @@ Accumulate
 					where
                                               accum - Accumulated image from input image
                                               input - Input image
-
 	
 	rppi_accumulate_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize,RppHandle_t rppHandle )
 
@@ -50,19 +49,21 @@ Accumulate
 Accumulate Weighted
 -------------------
 
+
   Accumulates a weighted value from an input image pixel to an output image pixel.
 
   Weighted accumulation is computed by:
 
 		                   .. centered:: accum(x,y)=(1−α)∗accum(x,y)+α∗input(x,y)
 
+<<<<<<< HEAD
 					where
                                               accum - Accumulated image from input image
                                               input - Input image
 
      Where 0≤α≤1 Conceptually, the rounding for this is defined as:
 
-                           ..centered::output(x,y)=uint8((1−α)∗float32(int32(output(x,y)))+α∗float32(int32(input(x,y))))
+                                 .. centered:: output(x,y)=uint8((1−α)∗float32(int32(output(x,y)))+α∗float32(int32(input(x,y))))
 			     
 	rppi_accumulate_weighted_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, Rpp64f alpha,RppHandle_t rppHandle )
 
@@ -88,6 +89,7 @@ Arithmetic Addition
                                               			- in1 - Input image 1
                                               			- in2 - Input image 2
                                               			- out - output image
+
 	
 	rppi_add_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
@@ -112,7 +114,6 @@ Arithmetic Subtraction
                                               			- in1 - Input image 1
                                               			- in2 - Input image 2
                                               			- out - output image
-
 
 	rppi_subtract_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
@@ -145,6 +146,7 @@ Bitwise AND
    Performs a bitwise AND operation between two images.
  
    Bitwise AND is computed by the following, for each bit in each pixel in the input images:
+
 
 				       .. centered:: out(x,y)=in1(x,y)∧in2(x,y)
 
@@ -214,6 +216,10 @@ Bitwise INCLUSIVE OR
                                               			- out - output image
 								- v   - Inclusive OR Operation
 
+    Bitwise INCLUSIVE OR is computed by the following, for each bit in each pixel in the input images:
+
+				      .. centered:: out(x,y)=in1(x,y)∨in2(x,y)
+
           Or expressed as C code:
 				      
 				      .. centered::  out(x,y) = in_1(x,y) | in_2(x,y)
@@ -241,6 +247,10 @@ Bitwise NOT
 								    - in  - Not Operation
 								    - out - output image
 
+=======
+
+				         .. centered:: out(x,y)=in(x,y)
+
          Or expressed as C code
 	          
 		                         .. centered:: out(x,y) = ~in_1(x,y)
@@ -262,9 +272,11 @@ Box Filter
 		
     """
     ::
-               	      [1  4  7 ]
-.. centered:: Kbox =  [2  5  8 ] 
-               	      [3  6  9 ]
+
+               		 [1  4  7 ]
+    .. centered:: Kbox = [2  5  8 ] 
+              		 [3  6  9 ]
+
     """
       rppi_box_filter_u8(RppPtr_t srcPtr, RppiSize srcSize, RppPtr_t dstPtr, RppHandle_t rppHandle)
 

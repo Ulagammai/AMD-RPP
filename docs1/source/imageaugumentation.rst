@@ -62,7 +62,7 @@ RPPBrightness
    - RppHandle_t handle -for GPU:It contains the Miscellanous function like command Queue.
 			 for CPU:NULL	
 
-                                        .. centered:: f(y) = α×f(x) + βs
+                                        .. centered::  f(y) = α×f(x) + βs
 
 RPPContrast
 -----------
@@ -82,6 +82,7 @@ RPPContrast
 					   New Max - New Min   
                .. centered:: I = (I-Min)    _______________     + New Min
 				               Max-Min
+
 RPPBlur
 -------
 
@@ -162,7 +163,7 @@ RPPWarpAffine
 -------------
  Performs an affine transform on an image.
 
-This kernel performs an affine transform with a 2x3 Matrix M with this method of pixel coordinate translation:
+ This kernel performs an affine transform with a 2x3 Matrix M with this method of pixel coordinate translation:
 
 
                                  .. centered::  x0=M1,1∗x+M1,2∗y+M1,3

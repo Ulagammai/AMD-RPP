@@ -5,17 +5,18 @@ Build and Install Instructions
   
 RPP supports two programming models
 
-   1. OpenCL 
-   2. `[HIP](https://github.com/ROCm-Developer-Tools/HIP)`_
+   1. OpenCL[2.0] 
+   2. `HIP <https://github.com/ROCm-Developer-Tools/HIP>`_
 
- Prerequisites
- -------------
- 
+Prerequisites
+--------------
+
    1. OpenCL(2.0) - OpenCL libraries and header files
    2. HIP    - HIP and HCC libraries and header files
    3. Ubuntu 16.04/18.04
-   4. `[ROCm supported hardware](https://rocm.github.io/hardware.html)`_
-   5. `[ROCm](https://rocm.github.io/install.html)`_
+   4. `ROCm supported hardware <https://rocm.github.io/hardware.html>`_
+   5. `ROCm <https://rocm.github.io/install.html>`_
+
 
  Functions Present
  ------------------
@@ -83,10 +84,10 @@ RPP supports two programming models
  
  `sudo make install`
 
- MIVisionX(OpenVX) Support
- --------------------------
+MIVisionX(OpenVX) Support
+--------------------------
 
- Extended RPP support as a functionality through OpenVX `[MIVisionX](https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX)`_ 
+ Extended RPP support as a functionality through OpenVX `MIVisionX <https://github.com/GPUOpen-ProfessionalCompute-Libraries/MIVisionX>`_ 
 
  **To build OpenVX with 'RPP extension'**
 
@@ -99,8 +100,8 @@ RPP supports two programming models
     cd MIVisionX
   
 
- For GPU support:
- ----------------
+For GPU support:
+----------------
  
  `mkdir build`
 
@@ -112,11 +113,10 @@ RPP supports two programming models
 
              or
 
- For CPU support:
- ----------------
+For CPU support:
+----------------
  
-
- `cd build;` 
+`cd build;` 
  
  `cmake -DCMAKE_DISABLE_FIND_PACKAGE_OpenCL=TRUE ..` 
  
