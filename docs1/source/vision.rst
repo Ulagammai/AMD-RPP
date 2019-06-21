@@ -116,6 +116,7 @@ Bitwise AND
 				       .. centered:: out(x,y)=in1(x,y)∧in2(x,y)
 
           Or expressed as C code:
+				       
 				       .. centered:: out(x,y) = in_1(x,y) & in_2(x,y)
 
 	rppi_bitwise_AND_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
