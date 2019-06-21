@@ -61,7 +61,7 @@ RPPBrightness
    - beta   - simple Brightness control.
    - RppHandle_t handle - It contains the Miscellanous function like command Queue.
 
-                                                ..centered:: f(y) = α×f(x) + βs
+                                      ..centered:: f(y) = α×f(x) + βs
 
 RPPContrast
 -----------
@@ -77,10 +77,10 @@ RPPContrast
    - new_max- Maximum value for Contrast function(225)
    - RppHandle_t handle - It contains the Miscellanous function like command Queue.
 
-				                                         I= (I-Min) New Max-New Min
+				                               I= (I-Min) New Max-New Min
 					                                
-						..centered::		 ----------------------------    +New Min                                  											
-									        Max-Min
+						..centered::  ----------------------------    +New Min                                  											
+								        Max-Min
 
 RPPBlur
 -------
@@ -97,10 +97,10 @@ RPPBlur
     ::
 
                 [1  1  1 ]                                  [1  2  1 ]             
-                [1  1  1 ]                            1/16  [2  4  2 ]  
+          1/9   [1  1  1 ]                            1/16  [2  4  2 ]  
                 [1  1  1 ]                                  [1  2  1 ]
                 						
-                Averaging                                    Gaussian
+                 Averaging                                    Gaussian
     """
 
 RPPFlip
