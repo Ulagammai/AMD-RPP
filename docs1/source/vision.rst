@@ -196,7 +196,6 @@ Box Filter
 
       This filter uses the following convolution matrix:
 		
-    def Matrix_func():
     """
     ::
              [1  4  7 ]
