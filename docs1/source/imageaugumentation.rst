@@ -61,7 +61,7 @@ RPPBrightness
    - beta   - simple Brightness control.
    - RppHandle_t handle - It contains the Miscellanous function like command Queue.
 
-                                                               f(y) = α×f(x) + βs
+                                                ..centered:: f(y) = α×f(x) + βs
 
 RPPContrast
 -----------
@@ -79,7 +79,7 @@ RPPContrast
 
 				                                         I= (I-Min) New Max-New Min
 					                                
-									----------------------------    +New Min                                  											
+						..centered::		 ----------------------------    +New Min                                  											
 									        Max-Min
 
 RPPBlur
@@ -92,6 +92,16 @@ RPPBlur
    - srcPtr - input image pointer; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend. 
    - srcSize-Image srcSize.
    - dstPtr - output image pointer of the same size and type as src.
+   
+   """
+    ::
+
+                [1  1  1 ]                                  [1  2  1 ]             
+                [1  1  1 ]                            1/16  [2  4  2 ]  
+                [1  1  1 ]                                  [1  2  1 ]
+                						
+                Averaging                                    Gaussian
+    """
 
 RPPFlip
 -------
@@ -117,7 +127,7 @@ RPPHue
    - dstPtr - output image pointer of the same size and type as src.
    - hueshift - 
   
-			                                                   H=H+360 if H<0
+			                           ..centered:: H=H+360 if H<0
 
 RPPSaturation
 -------------
@@ -129,9 +139,9 @@ RPPSaturation
    - srcPtr - input image pointer;it can have any number of channels, which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend. 
    - srcSize-Image srcSize.
    - dstPtr - output image pointer of the same size and type as src.
-   - saturationFactor-
-
-					                                S=(max-min)/max         (or S = 0,V = 0) where V is Value
+   - saturationFactor
+   
+                               ..centered:: S=(max-min)/max         (or S = 0,V = 0) where V is Value
 
 RPPRotate
 ---------
@@ -155,12 +165,11 @@ RPPWarpAffine
 This kernel performs an affine transform with a 2x3 Matrix M with this method of pixel coordinate translation:
 
 
-                                                x0=M1,1∗x+M1,2∗y+M1,3
+                                 ..centered:: x0=M1,1∗x+M1,2∗y+M1,3
 						
-                                                y0=M2,1∗x+M2,2∗y+M2,3
+                                 ..centered:: y0=M2,1∗x+M2,2∗y+M2,3
 						
-				                output(x,y)=input(x0,y0)
-
+				 ..centered:: output(x,y)=input(x0,y0)
 
 RPPRandomResize
 ---------------
