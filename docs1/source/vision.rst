@@ -196,15 +196,14 @@ Box Filter
 
       This filter uses the following convolution matrix:
 		
- def Matrix_func():
+    def Matrix_func():
     
-  r"""
-    
+    r"""
     .. math::
-    Kbox= \begin{bmatrix}
+    Kbox=  \begin{bmatrix}
                 1 & 1 & 1 \\
       	        1 & 1 & 1 \\  * 1/9
-                1 & 1 & 1
+                1 & 1 & 1 \\
             \end{bmatrix}
     """
 
