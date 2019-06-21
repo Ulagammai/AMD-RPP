@@ -18,7 +18,7 @@ enum RPPStatus
 
  **kernel not intialized**
 
-enum  RppiAxis
+enum RppiAxis
 --------------
 
  RPPI_HORIZONTAL_AXIS
