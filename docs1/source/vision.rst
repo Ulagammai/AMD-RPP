@@ -8,7 +8,7 @@ Absolute Difference
 
   Absolute Difference is computed by
   
-                                            .. centered::out(x,y)=|in1(x,y)−in2(x,y)|
+                                       .. centered:: out(x,y)=|in1(x,y)−in2(x,y)|
 
 	rppi_absolute_difference_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 	
