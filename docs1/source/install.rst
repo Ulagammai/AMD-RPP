@@ -18,8 +18,8 @@ Prerequisites
    5. `ROCm <https://rocm.github.io/install.html>`_
 
 
- Functions Present
- ------------------
+Functions Present
+------------------
 
   **Image Augumentation Functions** 
    
