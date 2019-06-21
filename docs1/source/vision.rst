@@ -35,7 +35,8 @@ Accumulate
 	                             .. centered:: accum(x,y)=accum(x,y)+input(x,y)
 						
 					where
-                                              accum - Accumulated image from input image
+                                              
+					      accum - Accumulated image from input image
                                               input - Input image
 	
 	rppi_accumulate_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize,RppHandle_t rppHandle )
@@ -56,7 +57,6 @@ Accumulate Weighted
 
 		                   .. centered:: accum(x,y)=(1−α)∗accum(x,y)+α∗input(x,y)
 
-<<<<<<< HEAD
 					where
                                               accum - Accumulated image from input image
                                               input - Input image
@@ -147,8 +147,7 @@ Bitwise AND
  
    Bitwise AND is computed by the following, for each bit in each pixel in the input images:
 
-
-				       .. centered:: out(x,y)=in1(x,y)∧in2(x,y)
+                                  .. centered:: out(x,y)=in1(x,y)∧in2(x,y)
 
 							
 								where
@@ -156,7 +155,7 @@ Bitwise AND
                                               			- in1 - Input image 1
                                               			- in2 - Input image 2
                                               			- out - output image
-								- ^   - AND Operation
+						 		- ^   - AND Operation
 
           Or expressed as C code:
 				       
@@ -198,8 +197,8 @@ Bitwise EXCLUSIVE OR
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
-						 for CPU:NULL
-
+                                                 for CPU:NULL
+						 
 Bitwise INCLUSIVE OR
 --------------------
 
@@ -246,8 +245,6 @@ Bitwise NOT
 								      __
 								    - in  - Not Operation
 								    - out - output image
-
-=======
 
 				         .. centered:: out(x,y)=in(x,y)
 
