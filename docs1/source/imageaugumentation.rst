@@ -61,7 +61,7 @@ RPPBrightness
    - beta   - simple Brightness control.
    - RppHandle_t handle - It contains the Miscellanous function like command Queue.
 
-                                      ..centered:: f(y) = α×f(x) + βs
+                                        ..centered:: f(y) = α×f(x) + βs
 
 RPPContrast
 -----------
@@ -127,7 +127,7 @@ RPPHue
    - dstPtr - output image pointer of the same size and type as src.
    - hueshift - 
   
-			                           ..centered:: H=H+360 if H<0
+			                          ..centered:: H=H+360 if H<0
 
 RPPSaturation
 -------------
