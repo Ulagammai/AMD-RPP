@@ -42,12 +42,12 @@ Accumulate Weighted
 
   Weighted accumulation is computed by:
 
-		                        .. centered:: accum(x,y)=(1−α)∗accum(x,y)+α∗input(x,y)
+		                   .. centered:: accum(x,y)=(1−α)∗accum(x,y)+α∗input(x,y)
 
-Where 0≤α≤1 Conceptually, the rounding for this is defined as:
+     Where 0≤α≤1 Conceptually, the rounding for this is defined as:
 
-		                                output(x,y)=uint8((1−α)∗float32(int32(output(x,y)))+α∗float32(int32(input(x,y))))
-
+                           ..centered::output(x,y)=uint8((1−α)∗float32(int32(output(x,y)))+α∗float32(int32(input(x,y))))
+			     
 	rppi_accumulate_weighted_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, Rpp64f alpha,RppHandle_t rppHandle )
 
 			- srcPtr1- input image pointer; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
@@ -198,7 +198,7 @@ Box Filter
 				    
 				     
                                    .. centered::          [1 1 1]
-				   .. centered:: Kbox =   [1 1 1]* 1/9
+				   .. centered:: Kbox =   [1 1 1] * 1/9
 				   .. centered::          [1 1 1]
 
           rppi_box_filter_u8(RppPtr_t srcPtr, RppiSize srcSize, RppPtr_t dstPtr, RppHandle_t rppHandle)
