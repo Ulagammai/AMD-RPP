@@ -61,7 +61,7 @@ RPPBrightness
    - beta   - simple Brightness control.
    - RppHandle_t handle - It contains the Miscellanous function like command Queue.
 
-                                        ..centered:: f(y) = α×f(x) + βs
+                                        ..centered::  f(y) = α×f(x) + βs
 
 RPPContrast
 -----------
@@ -79,7 +79,7 @@ RPPContrast
 
 				                               I= (I-Min) New Max-New Min
 					                                
-						..centered::  ----------------------------    +New Min                                  											
+						..centered::   ----------------------------    +New Min                                  											
 								        Max-Min
 
 RPPBlur
@@ -127,7 +127,7 @@ RPPHue
    - dstPtr - output image pointer of the same size and type as src.
    - hueshift - 
   
-			                          ..centered:: H=H+360 if H<0
+			                          ..centered::  H=H+360 if H<0
 
 RPPSaturation
 -------------
@@ -141,7 +141,7 @@ RPPSaturation
    - dstPtr - output image pointer of the same size and type as src.
    - saturationFactor
    
-                               ..centered:: S=(max-min)/max         (or S = 0,V = 0) where V is Value
+                               ..centered::  S=(max-min)/max         (or S = 0,V = 0) where V is Value
 
 RPPRotate
 ---------
@@ -165,11 +165,11 @@ RPPWarpAffine
 This kernel performs an affine transform with a 2x3 Matrix M with this method of pixel coordinate translation:
 
 
-                                 ..centered:: x0=M1,1∗x+M1,2∗y+M1,3
+                                 ..centered::  x0=M1,1∗x+M1,2∗y+M1,3
 						
-                                 ..centered:: y0=M2,1∗x+M2,2∗y+M2,3
+                                 ..centered::  y0=M2,1∗x+M2,2∗y+M2,3
 						
-				 ..centered:: output(x,y)=input(x0,y0)
+				 ..centered::  output(x,y)=input(x0,y0)
 
 RPPRandomResize
 ---------------
