@@ -129,13 +129,13 @@ Bitwise AND
 Bitwise EXCLUSIVE OR
 --------------------
 
-  Performs a bitwise EXCLUSIVE OR (XOR) operation between two images.
+    Performs a bitwise EXCLUSIVE OR (XOR) operation between two images.
 
-  Bitwise XOR is computed by the following, for each bit in each pixel in the input images:
+    Bitwise XOR is computed by the following, for each bit in each pixel in the input images:
 
 				         out(x,y)=in1(x,y)⊕in2(x,y)
 
-Or expressed as C code:
+        Or expressed as C code:
 				         out(x,y) = in_1(x,y) ^ in_2(x,y)
 
 	rppi_exclusive_OR_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
@@ -175,9 +175,8 @@ Bitwise NOT
 
 				           out(x,y)=in(x,y)
 
-Or expressed as C code:
-
-				           out(x,y) = ~in_1(x,y)
+Or expressed as C code
+ 					   out(x,y) = ~in_1(x,y)
 
 	rppi_bitwise_NOT_u8( RppPtr_t srcPtr1,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
