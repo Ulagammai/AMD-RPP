@@ -6,9 +6,9 @@ Absolute Difference
   
   Computes the absolute difference between two images.
 
-  Absolute Difference is computed by: 
-
-				        out(x,y)=|in1(x,y)−in2(x,y)|
+  Absolute Difference is computed by
+  
+                                           out(x,y)=|in1(x,y)−in2(x,y)|
 
 	rppi_absolute_difference_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 	
@@ -25,7 +25,7 @@ Accumulate
 
   Accumulation is computed by:
 
-	                                  accum(x,y)=accum(x,y)+input(x,y)
+	                                   accum(x,y)=accum(x,y)+input(x,y)
 
 	
 	rppi_accumulate_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize,RppHandle_t rppHandle )
@@ -42,11 +42,11 @@ Accumulate Weighted
 
   Weighted accumulation is computed by:
 
-		                  accum(x,y)=(1−α)∗accum(x,y)+α∗input(x,y)
+		                                accum(x,y)=(1−α)∗accum(x,y)+α∗input(x,y)
 
 Where 0≤α≤1 Conceptually, the rounding for this is defined as:
 
-		                  output(x,y)=uint8((1−α)∗float32(int32(output(x,y)))+α∗float32(int32(input(x,y))))
+		                                output(x,y)=uint8((1−α)∗float32(int32(output(x,y)))+α∗float32(int32(input(x,y))))
 
 	rppi_accumulate_weighted_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, Rpp64f alpha,RppHandle_t rppHandle )
 
@@ -60,11 +60,11 @@ Where 0≤α≤1 Conceptually, the rounding for this is defined as:
 Arithmetic Addition
 -------------------
 
- Performs addition between two images.
+   Performs addition between two images.
 
- Arithmetic addition is performed between the pixel values in two U8 orS16 images. The output image can be U8 only if both source images are U8and the output image is explicitly set to U8. It is otherwise S16. If one of the input images is of type S16, all values are converted to S16. The overflow handling is controlled by an overflow-policy parameter. For each pixel value in the two input images:
+   Arithmetic addition is performed between the pixel values in two U8 orS16 images. The output image can be U8 only if both source images are U8and the output image is explicitly set to U8. It is otherwise S16. If one of the input images is of type S16, all values are converted to S16. The overflow handling is controlled by an overflow-policy parameter. For each pixel value in the two input images:
 
-					   out(x,y)=in1(x,y)+in2(x,y)
+					               out(x,y)=in1(x,y)+in2(x,y)
 	
 	rppi_add_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
@@ -81,7 +81,7 @@ Arithmetic Subtraction
 
     Arithmetic subtraction is performed between the pixel values in two U8 or two S16 images. The output image can be U8 only if both source images are U8 and the output image is explicitly set to U8. It is otherwise S16. If one of the input images is of type S16, all values are converted to S16. The overflow handling is controlled by an overflow-policy parameter. For each pixel value in the two input images:
 
-					   out(x,y)=in1(x,y)−in2(x,y)
+					                   out(x,y)=in1(x,y)−in2(x,y)
 
 	rppi_subtract_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
@@ -94,7 +94,7 @@ Arithmetic Subtraction
 Bilateral Filter
 ----------------
 
- Performs a Bilateral filter operation on a input image.
+    Performs a Bilateral filter operation on a input image.
 
          rppi_bilateral_filter_u8(RppPtr_t srcPtr, RppiSize srcSize,RppPtr_t dstPtr, Rpp32u filterSize,Rpp64f sigmaI, Rpp64f sigmaS,RppHandle_t rppHandle)
 
@@ -109,9 +109,9 @@ Bilateral Filter
 Bitwise AND
 -----------
 
-  Performs a bitwise AND operation between two images.
+   Performs a bitwise AND operation between two images.
  
-  Bitwise AND is computed by the following, for each bit in each pixel in the input images:
+   Bitwise AND is computed by the following, for each bit in each pixel in the input images:
 
 				           out(x,y)=in1(x,y)∧in2(x,y)
 
@@ -129,9 +129,9 @@ Or expressed as C code:
 Bitwise EXCLUSIVE OR
 --------------------
 
-Performs a bitwise EXCLUSIVE OR (XOR) operation between two images.
+  Performs a bitwise EXCLUSIVE OR (XOR) operation between two images.
 
-Bitwise XOR is computed by the following, for each bit in each pixel in the input images:
+  Bitwise XOR is computed by the following, for each bit in each pixel in the input images:
 
 				         out(x,y)=in1(x,y)⊕in2(x,y)
 
@@ -149,9 +149,9 @@ Or expressed as C code:
 Bitwise INCLUSIVE OR
 --------------------
 
-	Performs a bitwise INCLUSIVE OR operation between two images.
+    Performs a bitwise INCLUSIVE OR operation between two images.
 
-	Bitwise INCLUSIVE OR is computed by the following, for each bit in each pixel in the input images:
+    Bitwise INCLUSIVE OR is computed by the following, for each bit in each pixel in the input images:
 
 				       out(x,y)=in1(x,y)∨in2(x,y)
 
@@ -169,15 +169,15 @@ Or expressed as C code:
 Bitwise NOT
 -----------
 
-   Performs a bitwise NOT operation on a input image.
+    Performs a bitwise NOT operation on a input image.
  
-   Bitwise NOT is computed by the following, for each bit in each pixel in the input image:
+    Bitwise NOT is computed by the following, for each bit in each pixel in the input image:
 
-				         out(x,y)=in(x,y)
+				           out(x,y)=in(x,y)
 
 Or expressed as C code:
 
-				         out(x,y) = ~in_1(x,y)
+				           out(x,y) = ~in_1(x,y)
 
 	rppi_bitwise_NOT_u8( RppPtr_t srcPtr1,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
 
@@ -189,16 +189,16 @@ Or expressed as C code:
 Box Filter
 ----------
 
-Computes a Box filter over a window of the input image.
+    Computes a Box filter over a window of the input image.
 
-This filter uses the following convolution matrix:
+    This filter uses the following convolution matrix:
 				    
 				     
                                      Kbox =  |1 1 1|
 				             |1 1 1|* 1/9
 				             |1 1 1|
 
-           rppi_box_filter_u8(RppPtr_t srcPtr, RppiSize srcSize, RppPtr_t dstPtr, RppHandle_t rppHandle)
+          rppi_box_filter_u8(RppPtr_t srcPtr, RppiSize srcSize, RppPtr_t dstPtr, RppHandle_t rppHandle)
 
 			- srcPtr- input image pointer; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
