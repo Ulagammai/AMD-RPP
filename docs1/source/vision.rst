@@ -199,11 +199,9 @@ Box Filter
     def Matrix_func():
     """
     ::
-
              [1  4  7 ]
        K  =  [2  5  8 ] 
              [3  6  9 ]
-
     """
       rppi_box_filter_u8(RppPtr_t srcPtr, RppiSize srcSize, RppPtr_t dstPtr, RppHandle_t rppHandle)
 
