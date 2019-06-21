@@ -198,11 +198,10 @@ Box Filter
 		
  def Matrix_func():
     
-    r"""
+  r"""
     
     .. math::
-
-     Kbox =\begin{bmatrix}
+    Kbox= \begin{bmatrix}
                 1 & 1 & 1 \\
       	        1 & 1 & 1 \\  * 1/9
                 1 & 1 & 1
