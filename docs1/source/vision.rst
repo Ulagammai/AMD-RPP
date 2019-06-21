@@ -196,8 +196,10 @@ Box Filter
 
       This filter uses the following convolution matrix:
 		
-def Matrix_func():
+ def Matrix_func():
+    
     r"""
+    
     .. math::
 
      Kbox =\begin{bmatrix}
