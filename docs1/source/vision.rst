@@ -115,7 +115,7 @@ Bitwise AND
 
 				           out(x,y)=in1(x,y)∧in2(x,y)
 
-Or expressed as C code:
+   Or expressed as C code:
 				           out(x,y) = in_1(x,y) & in_2(x,y)
 
 	rppi_bitwise_AND_u8( RppPtr_t srcPtr1, RppPtr_t srcPtr2,RppiSize srcSize, RppPtr_t dstPtr,RppHandle_t rppHandle )
@@ -189,9 +189,9 @@ Or expressed as C code:
 Box Filter
 ----------
 
-    Computes a Box filter over a window of the input image.
+      Computes a Box filter over a window of the input image.
 
-    This filter uses the following convolution matrix:
+      This filter uses the following convolution matrix:
 				    
 				     
                                      Kbox =  |1 1 1|
