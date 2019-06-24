@@ -21,8 +21,8 @@ Absolute Difference
 			- srcPtr2- input image pointer2; it can have any number of channels,which are processed independently.It takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
-			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue
-						 for CPU:NULL
+			- RppHandle_t rppHandle - for GPU:It contains the Miscellanous function like command Queue
+						  for CPU:NULL
 
 			
 Accumulate
@@ -43,7 +43,7 @@ Accumulate
 			- srcPtr1- input image pointer; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcPtr2- input image pointer2; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
-			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
+			- RppHandle_t rppHandle - for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
 			
 Accumulate Weighted
@@ -69,7 +69,7 @@ Accumulate Weighted
 			- srcPtr2- input image pointer2; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
 			- alpha  - parameter value that ranges from 0 to 1
-			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
+			- RppHandle_t rppHandle - for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
 			
 
@@ -95,7 +95,7 @@ Arithmetic Addition
 			- srcPtr2- input image pointer2; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
-			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
+			- RppHandle_t rppHandle - for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
 
 Arithmetic Subtraction
@@ -119,7 +119,7 @@ Arithmetic Subtraction
 			- srcPtr2- input image pointer2; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
-			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
+			- RppHandle_t rppHandle - for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
 
 Bilateral Filter
@@ -135,7 +135,7 @@ Bilateral Filter
 			- sigmaS - parameter that resides in Spatial level   
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
-			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
+			- RppHandle_t rppHandle - for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
 
 Bitwise AND
@@ -166,7 +166,7 @@ Bitwise AND
 			- srcPtr2- input image pointer2; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
-			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
+			- RppHandle_t rppHandle - for GPU:It contains the Miscellanous function like command Queue.
                                                  for CPU:NULL
 
 Bitwise EXCLUSIVE OR
@@ -195,7 +195,7 @@ Bitwise EXCLUSIVE OR
 			- srcPtr2- input image pointer2; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
-			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
+			- RppHandle_t rppHandle - for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
 
 Bitwise INCLUSIVE OR
@@ -228,7 +228,7 @@ Bitwise INCLUSIVE OR
 			- srcPtr2- input image pointer2; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
-			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
+			- RppHandle_t rppHandle - for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
 
 Bitwise NOT
@@ -257,8 +257,8 @@ Bitwise NOT
 			- srcPtr1- input image pointer; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
-			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
-						 for CPU:NULL
+			- RppHandle_t rppHandle - for GPU:It contains the Miscellanous function like command Queue.
+						  for CPU:NULL
 
 Box Filter
 ----------
@@ -270,9 +270,9 @@ Box Filter
     """
     ::
 
-    .. centered::         [1  4  7 ]
-    .. centered::  Kbox = [2  5  8 ] 
-    .. centered::         [3  6  9 ]
+    .. centered::        [1  4  7 ]
+    .. centered:: Kbox = [2  5  8 ] 
+    .. centered::        [3  6  9 ]
 
 
     """
@@ -281,8 +281,8 @@ Box Filter
 			- srcPtr- input image pointer; it can have any number of channels,which are processed independently.it takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
-			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
-						 for CPU:NULL
+			- RppHandle_t rppHandle - for GPU:It contains the Miscellanous function like command Queue.
+						  for CPU:NULL
 
 
 
