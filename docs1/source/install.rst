@@ -68,6 +68,7 @@ Color Format Support
  First create a build directory:
  
  mkdir build; 
+ 
  cd build;
  
  Next configure cmake. The preferred backend for RPP can be set using the `-DBACKEND` cmake variable.
@@ -100,7 +101,7 @@ MIVisionX(OpenVX) Support
     cd MIVisionX
   
 
-For GPU support:
+For GPU support
 ----------------
 
   Create a Build Directory,
@@ -111,7 +112,7 @@ For GPU support:
 
   Configure With cmake.For GPU Backend just run with cmake alone
  
- `cmake ..`
+  `cmake ..`
 
   The library can be built, from the `build` directory using the 'make' configuration:
  
@@ -123,7 +124,7 @@ For GPU support:
 
              or
 
-For CPU support:
+For CPU support
 ----------------
 
 
@@ -144,5 +145,4 @@ For CPU support:
    And can be installed by using the 'install' target:
 
   `sudo make install`
-
 
