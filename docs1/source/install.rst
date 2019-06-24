@@ -1,22 +1,25 @@
 Build and Install Instructions
 ******************************
 
-Build and Install Instructions
-------------------------------
-
 RPP supports two programming models
 -----------------------------------
 
         1.OpenCL[2.0]
+        
         2.`HIP <https://github.com/ROCm-Developer-Tools/HIP>`_
 
 Prerequisites
+-------------
 
         1.OpenCL(2.0) - OpenCL libraries and header files
+        
         2.HIP - HIP and HCC libraries and header files
+        
         3.Ubuntu 16.04/18.04
+        
         4.`ROCm supported hardware <https://rocm.github.io/hardware.html>`_
-        5.ROCm `<https://github.com/RadeonOpenCompute/ROCm#installing-from-amd-rocm-repositories>`_
+        
+        5.`ROCm <https://github.com/RadeonOpenCompute/ROCm#installing-from-amd-rocm-repositories>`_
 
 Functions Present
 -----------------
@@ -67,23 +70,23 @@ Color Format Support
 
     First create a build directory:
 
-    mkdir build; 
+    `mkdir build;`_ 
 
-    cd build;
+    `cd build;`_
 
     Next configure cmake. The preferred backend for RPP can be set using the -DBACKEND cmake variable.
 
     For OpenCL Backend, run:
 
-    cmake -DBACKEND=OCL ..`
+    `cmake -DBACKEND=OCL ..`_
 
     The library can be built, from the build directory using the ‘make’ configuration:
 
-    make -j4
+    `make -j4`_
 
     And can be installed by using the ‘install’ target:
 
-    sudo make install
+    `sudo make install`_
 
 MIVisionX(OpenVX) Support
 -------------------------
@@ -103,23 +106,23 @@ MIVisionX(OpenVX) Support
 For GPU support
 ----------------
 
-    First create a build directory:https://gpuopen-professionalcompute-libraries.github.io/MIVisionX/
+    First create a build directory:
 
-    mkdir build
+    `mkdir build`_
 
-    cd build
+    `cd build`_
    
     Next configure cmake.for GPU backend just run cmake alone.
 
-    cmake ..
+    `cmake ..`_
 
     The library can be built, from the build directory using the ‘make’ configuration
 
-    make -j4
+    `make -j4`_
 
     And can be installed by using the ‘install’ target
   
-    sudo make install
+    `sudo make install`_
 
         or
 
@@ -128,20 +131,20 @@ For CPU support
 
     First create a build directory:
     
-    mkdir build
+    `mkdir build`_
 
-    cd build
+    `cd build`_
 
     Next configure cmake.for CPU backend run without OpenCL.
 
-    cmake -DCMAKE_DISABLE_FIND_PACKAGE_OpenCL=TRUE ..
+    `cmake -DCMAKE_DISABLE_FIND_PACKAGE_OpenCL=TRUE ..`_
 
     The library can be built, from the build directory using the ‘make’ configuration
 
-    make -j4
+    `make -j4`_
 
     And can be installed by using the ‘install’ target
 
-    sudo make install
+    `sudo make install`_
 
 
