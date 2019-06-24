@@ -55,9 +55,7 @@ Accumulate Weighted
   Weighted accumulation is computed by:
 
 		                   .. centered:: accum(x,y)=(1−α)∗accum(x,y)+α∗input(x,y)
-
-<<<<<<< HEAD
-					where
+		where
                                               accum - Accumulated image from input image
                                               input - Input image
 
@@ -247,7 +245,6 @@ Bitwise NOT
 								    - in  - Not Operation
 								    - out - output image
 
-=======
 
 				         .. centered:: out(x,y)=in(x,y)
 

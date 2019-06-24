@@ -18,8 +18,8 @@ Prerequisites
    5. `ROCm <https://rocm.github.io/install.html>`_
 
 
- Functions Present
- ------------------
+Functions Present
+------------------
 
   **Image Augumentation Functions** 
    
@@ -49,8 +49,8 @@ Prerequisites
     - Bitwise NOT
     - Box Filter
 
- Color Format Support
- ---------------------
+Color Format Support
+---------------------
 
     - Support for 3C(RGB) and 1C(Grayscale) images
     - Planar and Packed
@@ -102,26 +102,47 @@ MIVisionX(OpenVX) Support
 
 For GPU support:
 ----------------
+
+  Create a Build Directory,
  
  `mkdir build`
 
  `cd build`
+
+  Configure With cmake.For GPU Backend just run with cmake alone
  
  `cmake ..`
+
+  The library can be built, from the `build` directory using the 'make' configuration:
  
- `make -j4` 
+ `make -j4`
+  
+  And can be installed by using the 'install' target:
+ 
+ `sudo make install` 
 
              or
 
 For CPU support:
 ----------------
+
+
+  Create a Build Directory,
  
-`cd build;` 
+  `mkdir build`
+
+  `cd build; 
+
+   Configure With cmake.For CPU Backend run without OpenCL
  
- `cmake -DCMAKE_DISABLE_FIND_PACKAGE_OpenCL=TRUE ..` 
+  `cmake -DCMAKE_DISABLE_FIND_PACKAGE_OpenCL=TRUE ..`
+
+   The library can be built, from the `build` directory using the 'make' configuration:
  
- `make -j4`
- 
- `sudo make install`
+  `make -j4`
+
+   And can be installed by using the 'install' target:
+
+  `sudo make install`
 
 
