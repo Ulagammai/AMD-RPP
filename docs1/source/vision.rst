@@ -21,8 +21,9 @@ Absolute Difference
 			- srcPtr2- input image pointer2; it can have any number of channels,which are processed independently.It takes input from cl buffer for Device Backend and host buffer for CPU Backend.
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
+
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue
-						 for CPU:NULL			
+						  for CPU:NULL
 
 Accumulate
 ----------
@@ -258,8 +259,9 @@ Bitwise NOT
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
-						 for CPU:NULL
-	
+						  for CPU:NULL
+
+
 Box Filter
 ----------
 
@@ -270,9 +272,9 @@ Box Filter
     """
     ::
 
-    .. centered::         [1  4  7 ]
-    .. centered::  Kbox = [2  5  8 ] 
-    .. centered::         [3  6  9 ]
+    .. centered::        [1  4  7 ]
+    .. centered:: Kbox = [2  5  8 ] 
+    .. centered::        [3  6  9 ]
 
 
     """
@@ -282,5 +284,5 @@ Box Filter
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
-						 for CPU:NULL
+						  for CPU:NULL
 
