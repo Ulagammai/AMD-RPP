@@ -16,7 +16,7 @@ Prerequisites
         2.HIP - HIP and HCC libraries and header files
         3.Ubuntu 16.04/18.04
         4.`ROCm supported hardware <https://rocm.github.io/hardware.html>`_
-        5.ROCm `<https://github.com/RadeonOpenCompute/ROCm#installing-from-amd-rocm-repositories>`_
+        5.`ROCm <https://github.com/RadeonOpenCompute/ROCm#installing-from-amd-rocm-repositories>`_
 
 Functions Present
 -----------------

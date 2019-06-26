@@ -22,9 +22,8 @@ Absolute Difference
 			- srcSize- Image srcSize
 			- dstPtr - output image pointer of the same size and type as src.
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue
-						 for CPU:NULL
+						 for CPU:NULL			
 
-			
 Accumulate
 ----------
 	
@@ -45,18 +44,19 @@ Accumulate
 			- srcSize- Image srcSize
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
-			
+									
 Accumulate Weighted
 -------------------
-
 
   Accumulates a weighted value from an input image pixel to an output image pixel.
 
   Weighted accumulation is computed by:
 
 		                   .. centered:: accum(x,y)=(1−α)∗accum(x,y)+α∗input(x,y)
-		where
-                                              accum - Accumulated image from input image
+			
+				where
+                                              
+					      accum - Accumulated image from input image
                                               input - Input image
 
      Where 0≤α≤1 Conceptually, the rounding for this is defined as:
@@ -72,7 +72,7 @@ Accumulate Weighted
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
 			
-
+		
 Arithmetic Addition
 -------------------
 
@@ -97,7 +97,7 @@ Arithmetic Addition
 			- dstPtr - output image pointer of the same size and type as src.
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
-
+						
 Arithmetic Subtraction
 ----------------------
 
@@ -121,7 +121,7 @@ Arithmetic Subtraction
 			- dstPtr - output image pointer of the same size and type as src.
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
-
+						
 Bilateral Filter
 ----------------
 
@@ -176,7 +176,7 @@ Bitwise EXCLUSIVE OR
 
     Bitwise XOR is computed by the following, for each bit in each pixel in the input images:
 
-				       .. centered:: out(x,y)=in1(x,y) ⊕ in2(x,y)
+				                    .. centered:: out(x,y)=in1(x,y) ⊕ in2(x,y)
 
 								where
                                               
@@ -197,7 +197,7 @@ Bitwise EXCLUSIVE OR
 			- dstPtr - output image pointer of the same size and type as src.
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
-
+						
 Bitwise INCLUSIVE OR
 --------------------
 
@@ -259,7 +259,7 @@ Bitwise NOT
 			- dstPtr - output image pointer of the same size and type as src.
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
-
+	
 Box Filter
 ----------
 
@@ -283,7 +283,4 @@ Box Filter
 			- dstPtr - output image pointer of the same size and type as src.
 			- RppHandle_t rppHandle- for GPU:It contains the Miscellanous function like command Queue.
 						 for CPU:NULL
-
-
-
 
