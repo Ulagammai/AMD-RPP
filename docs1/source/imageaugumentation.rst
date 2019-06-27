@@ -63,6 +63,11 @@ RPPBrightness
 			 for CPU:NULL	
 
                                           .. centered::  f(y) = α×f(x) + βs
+					  
+        \begin{equation}
+	\frac{1}{k}\log_2 c(f),\quad\dfrac{1}{k}\log_2 c(f),
+	\quad\tfrac{1}{k}\log_2 c(f)
+	\end{equation}
 
 RPPContrast
 -----------
