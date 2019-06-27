@@ -79,9 +79,9 @@ RPPContrast
    - RppHandle_t handle - for GPU:It contains the Miscellanous function like command Queue.
 			  for CPU:NULL
                                        
-					                New Max - New Min   
-                            .. centered:: I_N = (I-Min)    _______________     + New Min
-				                             Max-Min
+					                  
+                            .. centered:: \[I_N = {(I-Min)}\frac{New Max - New Min}{Max-Min}\]
+				                             
 
 RPPBlur
 -------
