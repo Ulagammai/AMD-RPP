@@ -80,7 +80,7 @@ RPPContrast
 			  for CPU:NULL
                                        
 					                New Max - New Min   
-                            .. centered:: I = (I-Min)    _______________     + New Min
+                            .. centered:: I_N = (I-Min)    _______________     + New Min
 				                             Max-Min
 
 RPPBlur
