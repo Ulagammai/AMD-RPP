@@ -5,15 +5,20 @@ RPP supports two programming models
 -----------------------------------
 
         1.OpenCL[2.0]
-        2.`HIP  <https://github.com/ROCm-Developer-Tools/HIP>`_
+        
+        2.`HIP <https://github.com/ROCm-Developer-Tools/HIP>`_
 
 Prerequisites
 -------------
 
         1.OpenCL(2.0) - OpenCL libraries and header files
+        
         2.HIP - HIP and HCC libraries and header files
+        
         3.Ubuntu 16.04/18.04
+        
         4.`ROCm supported hardware <https://rocm.github.io/hardware.html/>`_
+        
         5.`ROCm <https://github.com/RadeonOpenCompute/ROCm#installing-from-amd-rocm-repositories/>`_
 
 Functions Present
@@ -65,23 +70,23 @@ Color Format Support
 
     First create a build directory:
 
-    `mkdir build;`_ 
+    `mkdir build;` 
 
-    `cd build;`_
+    `cd build;`
 
     Next configure cmake. The preferred backend for RPP can be set using the -DBACKEND cmake variable.
 
     For OpenCL Backend, run:
 
-    `cmake -DBACKEND=OCL ..`_
+    `cmake -DBACKEND=OCL ..`
 
     The library can be built, from the build directory using the ‘make’ configuration:
 
-    `make -j4`_
+    `make -j4`
 
     And can be installed by using the ‘install’ target:
 
-    `sudo make install`_
+    `sudo make install`
 
 MIVisionX(OpenVX) Support
 -------------------------
