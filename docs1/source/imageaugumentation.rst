@@ -137,6 +137,11 @@ RPPHue
    - hueshift - 
   
 			                                           .. centered::  H=H+360 if H<0
+								   
+								   \begin{pmatrix}
+								   \alpha& \beta^{*}\\
+								   \gamma^{*}& \delta
+								   \end{pmatrix}
 
 RPPSaturation
 -------------
